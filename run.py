@@ -2,7 +2,6 @@ import time
 import datetime
 import requests
 import json
-from playsound import playsound
 
 
 def bbs(s):
@@ -10,9 +9,8 @@ def bbs(s):
         print('[{}] {}'.format(datetime.datetime.now().strftime('%H:%M:%S'), s))
 
 
-input('欢迎使用iPhone取货预约助手，请合理使用工具\n正在检查环境：\n即将播放预约提示音，按任意键开始...')
-sound_alarm = './alarm.mp3'
-playsound(sound_alarm)
+input('欢迎使用iPhone取货预约助手，按任意键开始...')
+
 
 print('配置特定型号')
 # Config State
@@ -91,12 +89,14 @@ while True:
                 is_available = True
                 lst_available.append(storeName)
 
-        if len(lst_available) > 0:
+        # TODO 修改直营店名称
+        if '苏州' in lst_available:
             if not is_alarm_on:
                 is_alarm_on = True
                 # Display while iPhone is available
                 print('以下直营店预约可用：\n{}\nhttps://www.apple.com.cn/shop/buy-iphone'.format(','.join(lst_available)))
-            playsound(sound_alarm)
+            # TODO 填写你的 bark 连接
+            requests.get(f'https://your-bark-url/{choice_type}-{select_size}')
 
         if not is_available:
             is_alarm_on = False
