@@ -8,16 +8,18 @@ MacOS, Windows, Linux
 ### 运行环境
 Python 3
 ### 使用方法
-拉取代码
+- 安装 Bark，获取 Bark 链接
+
+- 拉取代码
 git clone https://github.com/greatcodeeer/iPhone-Pickup-Monitor.git
 
-进入目录
+- 进入目录
 cd iPhone-Pickup-Monitor
 
-安装依赖
-pip install -r requirements.txt
+- 安装依赖
+pip install requestes
 
-修改自己的 bark 连接
+- 修改 Bark 链接和直营店（两个 TODO 位置）
 
-运行
+- 运行
 python3 run.py
