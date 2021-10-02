@@ -20,6 +20,8 @@ cd iPhone-Pickup-Monitor
 pip install requestes
 
 - 修改 Bark 链接和直营店（两个 TODO 位置）
+  - 查找直营店 https://www.apple.com.cn/retail/storelist/
+  - 如`上海, 七宝`，直接填`七宝`
 
 - 运行
 python3 run.py
