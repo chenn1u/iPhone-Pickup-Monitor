@@ -17,7 +17,7 @@ cd iPhone-Pickup-Monitor
 安装依赖
 pip install -r requirements.txt
 
+修改自己的 bark 连接
+
 运行
 python3 run.py
-
-⚠️ 声音播放库 playsound 会基于当前环境安装必备的依赖，提醒会在程序运行时发出，根据提示安装依赖即可。
