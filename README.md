@@ -11,7 +11,7 @@ Python 3
 - 安装 Bark，获取 Bark 链接
 
 - 拉取代码
-git clone https://github.com/greatcodeeer/iPhone-Pickup-Monitor.git
+git clone https://github.com/chenn1u/iPhone-Pickup-Monitor.git
 
 - 进入目录
 cd iPhone-Pickup-Monitor
